@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tabla.css">
+</head>
+
+<body>
+  <div class="divBotones">
+    <button class="btt" id="bttMul">Método Multiplicativo</button>
+    <button class="btt" id="bttAdi">Método Aditivo</button>
+    <button class="btt" id="bttMix">Método Linea o Mixto</button>
+  </div>
+  <div class="datosEntrada" id="contenido">
+    <div class="elementos">
+      <label>X inicial: </label>
+      <input type="text" id="txtX">
+    </div>
+    <div id="divCmb" class="elementos">
+      <label>Formula de A</label>
+      <select id="aCmb">
+        <option value="1" selected>a = 3 + 8 k</option>
+        <option value="2">a = 5 + 8 k</option>
+      </select>
+    </div>
+    <div id="divK" class="elementos">
+      <label>K: </label>
+      <input type="text" id="txtK">
+    </div>
+    <div id="divC" class="elementos">
+      <label>C: </label>
+      <input type="text" id="txtC">
+    </div>
+    <div id="divG" class="elementos">
+      <label>G: </label>
+      <input type="text" id="txtG">
+    </div>
+    <div class="botonesCalcular">
+      <input type="button" value="Calcular Método Mixto o Lineal" id="bttCalcular">
+      <input type="button" value="Calcular Método Multiplicativo" id="bttMultiplicativo">
+      <input type="button" value="Calcular Método Aditivo" id="bttAditivo">
+    </div>
+  </div>
+
+  <table class="presentacion" id="presentacion">
+    <tr>
+      <td>i</td>
+      <td>Xn</td>
+      <td>Ri</td>
+    </tr>
+  </table>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/multi.js"></script>
+  <script type="text/javascript" src="js/aditivo.js"></script>
+  <script type="text/javascript" src="js/botones.js"></script>
+  <script type="text/javascript" src="js/validaciones.js"></script>
+</body>
+
+</html>

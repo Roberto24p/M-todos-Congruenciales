@@ -1,0 +1,11 @@
+table {
+    margin-top: 20px;
+    margin-left: 22%;
+    table-layout: fixed;
+    width: 50%;
+    border-collapse: separate;
+    border: 3px solid rgb(99, 121, 161);
+  }
+  tr{
+    border: 3px solid rgb(99, 121, 161);
+  }
