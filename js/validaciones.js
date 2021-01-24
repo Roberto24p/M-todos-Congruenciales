@@ -24,10 +24,10 @@ function validarBtt(e) {
     let bttValidar = document.getElementById('bttMultiplicativo');
     let parentNode;
     for (let i = 0; i < e.length; i++) {
-        parentNode = e[i];
-        if (parentNode.style.display != 'none') {
+        parentNode = e[i].parentNode;
+        if (parentNode.style.display != 'none' && parentNode.style.display != '' ) {
             if (e[i].value == "") {
-                console.log("saludos");
+                console.log(e[i]);
                 bttValidar.disabled = true;
                 bttAditivo.disabled = true;
                 bttCalcular.disabled = true;

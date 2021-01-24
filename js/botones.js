@@ -9,7 +9,7 @@ bttMul.addEventListener('click', function () {
     let inputX = document.getElementById('txtX');
     inputX.addEventListener('input',validarSoloImpares);
 txtC.style.display = 'none';
-
+inputX.parentNode.style.display = 'block';
 txtK.style.display = 'block';
 tipoA.style.display = 'block';
 
@@ -48,7 +48,7 @@ bttAdi.addEventListener('click', function () {
     for(let i = 0; i<cantidadI; i++){
         elementAditivo = prompt('Ingresa una semilla: ')
         if(!isNaN(elementAditivo) && elementAditivo != null && elementAditivo != ""){
-            arrayAditivo.push(elementAditivo);
+            arrayAditivo.push(parseInt(elementAditivo));
         }else{
             alert('no es numero');
             i--;

@@ -1,8 +1,8 @@
-let arrayAditivo = [20,13, 56, 98, 9];
+let arrayAditivo = [];
 let bttAditivo = document.getElementById('bttAditivo');
 
 bttAditivo.addEventListener('click', function(){
-    let m = calcularM(parseInt(txtG.value));
+    let m = parseInt(txtG.value);
     calcularAditivo(m)
 })
 function calcularAditivo(m){
