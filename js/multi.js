@@ -3,14 +3,17 @@ let bttMultiplicativo = document.getElementById('bttMultiplicativo');
 bttMultiplicativo.addEventListener('click', function(){
     let k = parseFloat(txtK.value);
     let g = parseFloat(txtG.value);
+    let n = parseInt(txtN.value);
+    let semilla;
     let tipoA = document.getElementById('aCmb');
     let a = calcularAMulti(parseInt(tipoA.value), k);
     console.log(a);
     let m = calcularM(g);
-
+    semilla = document.getElementById('txtX').value;
+    xArray.push(semilla);
     let randomNumber;
     let x;
-    for(let i = 0; i<20; i++){
+    for(let i = 0; i<n; i++){
         x = calcularMultiplicativo(xArray[i],a,m);
        
         xArray.push(x);

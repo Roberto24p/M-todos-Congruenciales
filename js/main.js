@@ -2,20 +2,23 @@ let bttCalcular = document.getElementById('bttCalcular');
 let txtK = document.getElementById('txtK');
 let txtC = document.getElementById('txtC');
 let txtG = document.getElementById('txtG');
+let txtN = document.getElementById('txtN');
 
-
-let xArray = [15];
+let xArray = [];
 let resultado = [];
 let i = 1;
 
 
 bttCalcular.addEventListener('click', function(){
-    let k , c , g;
+    console.log('hola gente');
+    let n = parseInt(txtN.value);
+    let k , c , g, semilla;
     k = parseFloat(txtK.value);
     c = parseFloat(txtC.value);
     g = parseFloat(txtG.value);
-
-    for(let i = 0; i<10; i++)
+    semilla = document.getElementById('txtX').value;
+    xArray.push(parseFloat(semilla));
+    for(let i = 0; i<n; i++)
         metodoMixto(k,c,g);
 })
 
@@ -64,3 +67,12 @@ function crearElementoPresentar(fila, text, tabla){
     fila.appendChild(td);
     tabla.appendChild(fila);
 }
+
+
+let bttLimpiar = document.getElementById('bttLimpiar').addEventListener('click', function(){
+    for(let i = 0; i< inputsElements.length; i++){
+        inputsElements[i].value = "";
+    }
+    window.location.reload();
+    
+})

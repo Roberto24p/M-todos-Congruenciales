@@ -9,13 +9,23 @@
 </head>
 
 <body>
+  <h1>Trabajo de Simulación de Sistemas    6-2</h1>
+  <h1>Pertenece a:</h1>
+  <ul>
+    <li>Placencio Pinto Roberto</li>
+    <li>Vera Rojas Alfonso</li>
+  </ul>
   <div class="divBotones">
     <button class="btt" id="bttMul">Método Multiplicativo</button>
     <button class="btt" id="bttAdi">Método Aditivo</button>
     <button class="btt" id="bttMix">Método Linea o Mixto</button>
   </div>
   <div class="datosEntrada" id="contenido">
-    <div class="elementos">
+    <div class="elementos" id='divN'>
+      <label>Cantidad de Números: </label>
+      <input type="text" id="txtN">
+    </div>
+    <div class="elementos" id='divX'>
       <label>X inicial: </label>
       <input type="text" id="txtX">
     </div>
@@ -39,9 +49,10 @@
       <input type="text" id="txtG">
     </div>
     <div class="botonesCalcular">
-      <input type="button" value="Calcular Método Mixto o Lineal" id="bttCalcular">
-      <input type="button" value="Calcular Método Multiplicativo" id="bttMultiplicativo">
-      <input type="button" value="Calcular Método Aditivo" id="bttAditivo">
+      <input type="button" disabled value="Calcular Método Mixto o Lineal" id="bttCalcular">
+      <input type="button" disabled = "true" value="Calcular Método Multiplicativo" id="bttMultiplicativo">
+      <input type="button" disabled value="Calcular Método Aditivo" id="bttAditivo">
+      <input type="button"  value="Limpiar" id="bttLimpiar">
     </div>
   </div>
 
